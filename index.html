@@ -1,75 +1,245 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Portfolio</title>
+
+    <link rel="icon" type="image/png" href="Assets/Website Icon (3).png">
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
 </head>
+
 <body>
 
     <!-- Navbar -->
     <nav class="navbar">
-        <h2 class="logo">MyPortfolio</h2>
+
+        <h2 class="logo">
+            <a href="#home">My_Portfolio</a>
+        </h2>
+
         <ul class="nav-links">
+
+            <li>
+                <div class="theme-switch" id="theme-toggle">
+                    <div class="switch-knob">
+                        <span id="toggle-icon">🌙</span>
+                    </div>
+                </div>
+            </li>
+
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
+
         </ul>
+
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Home -->
     <section id="home" class="section hero">
+
         <div class="hero-content">
-            <div class="hero-img">
-                <img src="https://via.placeholder.com/200" alt="Profile">
+
+            <div class="hero-left">
+
+                <div class="hero-img">
+                    <img src="Assets/bitmoji_01.PNG" alt="Profile Picture">
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/SpectralProgrammer" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/shravandevraj/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                </div>
+
             </div>
+
             <div class="hero-text">
-                <h1>I am <span>Your_Name</span></h1>
-                <p>Computer Science Student | Developer</p>
+
+                <h1>
+                    <span id="intro-text">i am</span>
+                    <br>
+                    <span id="typing-name"></span>
+                </h1>
+
+                <p class="hero-subtext">
+                    <span id="role-sequence"></span>
+                </p>
+
             </div>
+
         </div>
+
+        <a href="#about" class="scroll-indicator">
+
+            <p>Scroll Down</p>
+
+            <div class="arrow"></div>
+
+        </a>
+
     </section>
 
     <!-- About -->
     <section id="about" class="section">
+
         <h1 class="section-title">About Me</h1>
+
+        <p class="about-meta">
+            <span>📍 United States</span>
+            <span>•</span>
+            <span>CS Student</span>
+            <span>•</span>
+            <span>Developer</span>
+        </p>
+
         <div class="about-container">
-            <img src="https://via.placeholder.com/250" alt="My Pic">
+
+            <img src="Assets/aboutMe_01.png" alt="About Me Picture">
+
             <p>
-                I'm a Computer Science student passionate about building clean,
-                functional applications. I enjoy working with web technologies,
-                solving problems, and continuously learning new tools.
+                I am a Computer Science student passionate about building innovative
+                and impactful technology through creativity, problem solving, and
+                continuous learning. Whether it's developing projects during
+                hackathons, leading technical workshops, or teaching students how to
+                code, I enjoy creating meaningful solutions while helping others grow
+                along the way.
+                <br><br>
+                My experience spans software development, technical leadership, and
+                education, with a strong focus on collaboration, adaptability, and
+                real world problem solving. Beyond coding, my background in martial
+                arts and cubing has strengthened my discipline, leadership, and
+                perseverance — qualities I bring into every project and challenge I
+                take on.
             </p>
+
         </div>
+
+        <a href="#projects" class="scroll-indicator about-scroll">
+
+            <p>Scroll Down</p>
+
+            <div class="arrow"></div>
+
+        </a>
+
     </section>
 
     <!-- Projects -->
     <section id="projects" class="section">
+
         <h1 class="section-title">My Projects</h1>
+
         <div class="projects-container">
 
+            <!-- Project 1 -->
             <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Short description of project.</p>
-                <a href="#" target="_blank">View on GitHub →</a>
+
+                <h3>LensCook</h3>
+
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Streamlit</span>
+                    <span>Firebase</span>
+                    <span>Google Vision API</span>
+                    <span>Spoonacular API</span>
+                    <span>REST API</span>
+                </div>
+
+                <div class="project-award">
+                    🏆 1st Place — Health & Wellness — Hackathon by the Sea 2024
+                </div>
+
+                <p>
+                    Developed by a team of four during a 36 hour hackathon with
+                    200+ participants, LensCook analyzes photographed ingredients
+                    and recommends healthy recipes using computer vision and real
+                    time API integration.
+                </p>
+
+                <a
+                    href="https://github.com/SpectralProgrammer/LensCook"
+                    target="_blank"
+                >
+                    View on GitHub →
+                </a>
+
             </div>
 
+            <!-- Project 2 -->
             <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Short description of project.</p>
-                <a href="#" target="_blank">View on GitHub →</a>
-            </div>
 
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>Short description of project.</p>
-                <a href="#" target="_blank">View on GitHub →</a>
+                <h3>Sign Language For All (SLFA)</h3>
+
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Machine Learning</span>
+                    <span>Image Recognition</span>
+                    <span>Teachable Machine</span>
+                </div>
+
+                <div class="project-award">
+                    🥈 2nd Place — Code-A-Thon 2023
+                </div>
+
+                <p>
+                    Developed during a 48 hour international hackathon, SLFA uses
+                    image recognition and machine learning to help users learn
+                    American Sign Language through interactive gesture detection,
+                    alphabet training, and common phrase recognition.
+                </p>
+
+                <a
+                    href="https://github.com/SpectralProgrammer/SignLanguageForAll-SLFA"
+                    target="_blank"
+                >
+                    View on GitHub →
+                </a>
+
             </div>
 
         </div>
+
+        <div class="github-button-container">
+
+            <a
+                href="https://github.com/SpectralProgrammer?tab=repositories"
+                target="_blank"
+                class="github-button"
+            >
+                View All Projects on GitHub →
+            </a>
+
+        </div>
+
     </section>
 
     <script src="script.js"></script>
+
 </body>
 </html>
