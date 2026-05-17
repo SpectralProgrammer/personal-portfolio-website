@@ -603,7 +603,6 @@ body.light-mode .hero-img {
 body.light-mode #typing-name,
 body.light-mode #typing-name::after {
     color: #005b8a;
-    background: #005b8a;
 }
 
 body.light-mode #role-sequence {
