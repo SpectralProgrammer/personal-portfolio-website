@@ -45,7 +45,7 @@ const roleElement = document.getElementById("role-sequence");
 const roleStages = [
     "Gamer",
     "Gamer | Coder",
-    "Gamer | Coder | Problem Solver"
+    "Gamer | Coder | Developer"
 ];
 
 let roleTimeouts = [];
