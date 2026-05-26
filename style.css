@@ -560,6 +560,25 @@ body {
     color: white;
 }
 
+.project-description {
+    margin-top: 4px;
+
+    padding-left: 18px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+
+    opacity: 0.88;
+}
+
+.project-description li {
+    opacity: 0.9;
+}
+
 /* ---------- Tech Stack ---------- */
 
 .tech-stack {
