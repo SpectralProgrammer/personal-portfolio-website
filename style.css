@@ -27,7 +27,7 @@ body {
 
 .section-title {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-size: 3.5rem;
     font-weight: 600;
 }
@@ -452,19 +452,8 @@ body {
     padding: 40px 20px;
 }
 
-.about-container img {
-    width: 350px;
-
-    border: 3px solid rgba(255,255,255,0.9);
-    border-radius: 10px;
-
-    object-fit: cover;
-
-    transition: 0.4s ease;
-}
-
 .about-container img:hover {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
 }
 
 .about-container p {
@@ -493,6 +482,118 @@ body {
     border-radius: 20px;
 
     opacity: 0.7;
+}
+
+/* ===========================
+   ABOUT GALLERY
+=========================== */
+
+.about-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-title {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.55;
+    margin-bottom: 18px;
+}
+
+.gallery-wrapper {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 4px solid rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+}
+
+.gallery-wrapper img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+.gallery-wrapper img.fade {
+
+    opacity: 0;
+
+    transform: scale(0.98);
+}
+
+.gallery-btn {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    cursor: pointer;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+
+    font-size: 1.2rem;
+
+    opacity: 0.75;
+
+    transition: 0.25s ease;
+
+    z-index: 2;
+}
+
+.gallery-btn:hover {
+
+    opacity: 1;
+
+    transform: translateY(-50%) scale(1.06);
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+#gallery-caption {
+
+    margin-top: 18px;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+
+    font-style: italic;
+
+    opacity: 0.65;
+
+    max-width: 320px;
+
+    line-height: 1.5;
 }
 
 /* ---------- Projects ---------- */
@@ -792,8 +893,8 @@ body.light-mode .github-button:hover {
     color: #005b8a;
 }
 
-body.light-mode .about-container img {
-    border: 3px solid rgba(0,0,0,0.7);
+body.light-mode .gallery-wrapper {
+    border-color:  rgba(0,0,0,0.7);
 }
 
 body.light-mode .about-container p::before {

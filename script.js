@@ -107,3 +107,85 @@ toggleButton.addEventListener("click", () => {
     }
 
 });
+
+let pic_caption = "Capturing quiet moments and interesting perspectives."
+
+const galleryImages = [
+
+    {
+        src: "Assets/AboutMe_1.png",
+        caption: pic_caption
+    },
+
+    {
+        src: "Assets/AboutMe_2.png",
+        caption: pic_caption
+    },
+
+    {
+        src: "Assets/AboutMe_3.png",
+        caption: pic_caption
+    },
+
+    {
+        src: "Assets/AboutMe_4.png",
+        caption: pic_caption
+    },
+
+    {
+        src: "Assets/AboutMe_5.png",
+        caption: pic_caption
+    },
+
+    {
+        src: "Assets/AboutMe_6.png",
+        caption: pic_caption
+    }
+];
+
+let currentImage = 0;
+
+const image = document.getElementById("gallery-image");
+
+const caption = document.getElementById("gallery-caption");
+
+function updateGallery() {
+
+    image.classList.add("fade");
+
+    setTimeout(() => {
+
+        image.src = galleryImages[currentImage].src;
+
+        caption.textContent =
+            galleryImages[currentImage].caption;
+
+        image.classList.remove("fade");
+
+    }, 200);
+
+}
+
+document.querySelector(".next")
+.addEventListener("click", () => {
+
+    currentImage++;
+
+    if(currentImage >= galleryImages.length)
+        currentImage = 0;
+
+    updateGallery();
+
+});
+
+document.querySelector(".prev")
+.addEventListener("click", () => {
+
+    currentImage--;
+
+    if(currentImage < 0)
+        currentImage = galleryImages.length - 1;
+
+    updateGallery();
+
+});
