@@ -4,6 +4,13 @@ Personal portfolio website built to showcase my projects, experience, technical 
 
 **Live Website:** https://www.shravandevraj.com/
 
+## Tech Stack
+
+- HTML
+- CSS
+- JavaScript
+- Responsive Design
+- UI/UX Design
 ---
 
 ## Portfolio Website v1 — Completed
@@ -44,11 +51,7 @@ Personal portfolio website built to showcase my projects, experience, technical 
 - Continued refining animations, layout consistency, and overall user experience.
 
 ---
+## Portfolio Website v4 — Under Development
+**Focus:** Redesign
 
-## Tech Stack
-
-- HTML
-- CSS
-- JavaScript
-- Responsive Design
-- UI/UX Design
+---
